@@ -113,7 +113,7 @@ def main():
   
   parser = argparse.ArgumentParser(description="generate configuration for switch port")
   parser.add_argument("--debug", action="store_true", default=False)
-  parser.add_argument("--port", type=str, default="/dev/ttyUSB0", help="Serial port [default: linux console port]")
+  parser.add_argument("--port", type=str, default="/dev/ttyS0", help="Serial port [default: linux console port]")
   parser.add_argument('--speed', type=int, choices=BAUD_RATES, default=DEFAULT_BAUDRATE, help="Connection speed")
 
   subparsers = parser.add_subparsers()
